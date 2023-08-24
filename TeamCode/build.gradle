@@ -23,7 +23,14 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url = "https://artifactory.scala.gg/artifactory/opensource"
+    }
+}
+
 dependencies {
     implementation project(':FtcRobotController')
     annotationProcessor files('lib/OpModeAnnotationProcessor.jar')
+    implementation "io.liftgate.ftc.scripting:api:0.1.3-SNAPSHOT"
 }
