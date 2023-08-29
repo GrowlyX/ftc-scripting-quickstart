@@ -10,10 +10,6 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author GrowlyX
- * @since 8/20/2023
- */
-/*
  * Since this class implements the DevLinearOpMode class, the code editor web
  * server will be started alongside the configured TeleOp, if not already started.
  *
@@ -22,8 +18,11 @@ import java.util.List;
  * automatically applied to the robot's running OpMode instance).
  *
  * The implemented methods in this class are in the {@link KotlinScript} class, so
- *  to avoid boilerplate, you can proxy methods from a shared KotlinScript
+ * to avoid boilerplate, you can proxy methods from a shared KotlinScript
  * implementation.
+ *
+ * @author GrowlyX
+ * @since 8/20/2023
  */
 @TeleOp
 public class DevScriptedTeleOp extends DevLinearOpMode {
@@ -56,14 +55,14 @@ public class DevScriptedTeleOp extends DevLinearOpMode {
          * </pre>
          */
         return Arrays.asList(
-            ImpliedVariable.of(
+            /*ImpliedVariable.of(
                 "leftMotor",
                 hardwareMap.get(DcMotor.class, "leftMotor")
             ),
             ImpliedVariable.of(
                 "myServo",
                 hardwareMap.get(Servo.class, "myServo")
-            )
+            )*/
         );
     }
 }
